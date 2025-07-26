@@ -1,2 +1,4 @@
-# M.A.K-E-COM
-E-COMMERCE Website for cloths made with HTML, CSS and JavaScript. Visual Studio Code is used for this project.
+# fashnovaa
+
+E-COMMERCE website for clothing made with HTML, CSS, and JavaScript.  
+Built using Visual Studio Code for development.
