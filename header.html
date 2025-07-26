@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="top-left">
+            <span>Free shipping and returns</span>
+            <span class="divider">|</span>
+            <a href="#">Join us</a>
+        </div>
+        <div class="top-right">
+            <span>Shipping country</span>
+            <span class="divider">|</span>
+            <span>Orders by: <a href="tel:+919540448296">+91 9540448296</a></span>
+            <span class="divider">|</span>
+            <a href="#">Whatsapp</a>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="logo">
+            <img class="logo-img" src="./images/Fashnovaa/8.png" alt="Logo">
+        </div>
+        <nav class="nav-menu" id="navMenu">
+            <a class="active" href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <a href="login.html"><i class="fas fa-user"></i></a>
+        </div>
+
+
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+
+
+
+
+
+    </header>
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

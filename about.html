@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("header.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch((error) => console.error("Error loading header:", error));
+    </script>
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('show');
+        }
+    </script>
+    <section id="about-header" class="about">
+        <!-- <h2>About Us</h2>
+        <p>"Not Just Clothes, It's a Lifestyle"</p> -->
+    </section>
+    <section class="about-banner">
+        <div class="about-images">
+            <img src="./images/my-images/h2.jpg" alt="Fashion 1" class="img img1">
+            <img src="./images/my-images/h1.png" alt="Fashion 2" class="img img2">
+        </div>
+        <div class="about-content">
+            <h5>ABOUT US</h5>
+            <h1>Crafting Confidence, One Outfit at a Time</h1>
+            <p>
+                At Fashnovaa, we believe fashion is more than just clothing — it's a way to express who you are. Our
+                mission is simple: to bring you style that speaks, quality that lasts, and comfort that empowers.
+
+                From everyday essentials to trend-forward statement pieces, every item in our collection is designed
+                with care and crafted with purpose. Whether you're stepping out for a casual day or dressing up for a
+                special moment, Fashnovaa is here to make sure you look and feel your best.
+            </p>
+        </div>
+    </section>
+    <section class="about-banner-story">
+        <div class="about-content-story">
+            <h5>OUR STORY</h5>
+            <h1>A Journey from Passion to Fashion with Fashnovaa</h1>
+            <p>
+                Fashnovaa began with a spark of creativity and a deep love for self-expression through style. What
+                started as a dream to redefine everyday fashion quickly evolved into a brand that celebrates
+                individuality, confidence, and elegance.
+            </p>
+            <p>
+                Every stitch tells a story — of timeless trends, bold visions, and craftsmanship rooted in quality. At
+                Fashnovaa, we believe clothing isn’t just about what you wear, but how you feel in it. </p>
+        </div>
+        <div class="about-image-story">
+            <img src="/images/my-images/dresses-data-1.jpg" alt="Florist Story">
+        </div>
+    </section>
+    <section class="vision-mission-section">
+        <div class="vm-image">
+            <img src="/images/my-images/ab.jpg" alt="Team at work">
+        </div>
+
+        <div class="vm-content">
+            <div class="vm-box">
+                <h3>Our Vision</h3>
+                <p>
+                    At Fashnovaa, our vision is to be the guiding force in modern fashion — where timeless trends meet
+                    bold individuality. We aspire to inspire, by reshaping how people experience style through comfort,
+                    elegance, and authenticity.
+                </p>
+            </div>
+
+            <div class="vm-box">
+                <h3>Our Mission</h3>
+                <p>
+                    Our mission is to empower confidence through fashion. With thoughtful design, high-quality fabrics,
+                    and a passion for expression, we aim to create outfits that not only look good — but feel powerful.
+                    Every collection is a step toward effortless personal style.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="images/features/f1.png" alt="f1">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features/f2.png" alt="f1">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features/f3.png" alt="f1">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features/f4.png" alt="f1">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features/f5.png" alt="f1">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features/f6.png" alt="f1">
+            <h6>24/7 support</h6>
+        </div>
+
+    </section>
+    <div id="footer"></div>
+    <script>
+        // Dynamically load the footer
+        fetch("footer.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch((error) => console.error("Error loading footer:", error));
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

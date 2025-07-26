@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.A.K E-COM</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <div id="header"></div>
+    <script>
+        // Dynamically load the navbar
+        fetch("header.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch((error) => console.error("Error loading header:", error));
+    </script>
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('show');
+        }
+    </script>
+    <section id="blog-header">
+      
+    </section>
+    <section id="blog">
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/blog/b1.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
+                <p>kickstarter with an amazing coloring book. with different varities of styles and so on</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/blog/b2.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>How to style a quiff</h4>
+                <p>kickstarter with an amazing coloring book. with different varities of styles and so on</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/blog/b3.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Must - have skater girl items</h4>
+                <p>kickstarter with an amazing coloring book. with different varities of styles and so on</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/blog/b4.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Runway-Inspired Trends</h4>
+                <p>kickstarter with an amazing coloring book. with different varities of styles and so on</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/blog/b6.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>AW20 Menswear Trends</h4>
+                <p>kickstarter with an amazing coloring book. with different varities of styles and so on</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+
+
+    </section>
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
+
+    </section>
+     <div id="footer"></div>
+    <script>
+        // Dynamically load the footer
+        fetch("footer.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch((error) => console.error("Error loading footer:", error));
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
